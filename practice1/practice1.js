@@ -60,6 +60,7 @@ console.log(str0);
 
 //8. Вывести в окно браузера при помощи метода alert() следующие данные: Ваше ФИО, возраст, хобби (каждой на новой строки спомощью \n).
 alert('Kravets Bohdan\n31\nwalking');
+
 //9. Создать 4 переменные с использованием ключевого слова let с именами str1, str2, str3, concatenation.
 //    Переменной str1 присвоить фразу ‘Кто ‘, str2 – ‘ты ‘, str3 – ‘такой?’
 //  Локальной переменной concatenation присвоить результат конкатенации 3-х строк: str1, str2, str3.
@@ -82,7 +83,7 @@ console.log(parseInt("3.14"));
 console.log(parseInt("-7.875"));
 console.log(parseInt("435"));
 console.log(parseInt("Вася"));
-//
+
 //12.  С помощью окна ввода, вызываемого методом prompt, пользователь может ввести данные, которые будут использоваться далее, повторите код ниже
 //let str = prompt("Enter something", "ho-ho")
 //console.log(str);
@@ -109,41 +110,37 @@ alert(`Доброго вечера ${firstName} ${secondName}, мои поздр
 //    За допомоги if else вивести іх в порядку зростання. (відсортувати по зростанню)
 let n1 = prompt("Enter first number:");
 let n2 = prompt("Enter second number:");
-let n3 = prompt('Enter third number');
+let n3 = prompt('Enter third number:');
 
-if(n1 < n2) {
-    if(n2 < n3) {
-        console.log(n1);
-        console.log(n2);
-        console.log(n3);
-    } else {
-        if(n1 < n3) {
-            console.log(n1);
-            console.log(n3);
-            console.log(n2);
-        } else {
-            console.log(n3);
-            console.log(n1);
-            console.log(n2);
-        }
-    }
-} else {
-    if (n3 < n2)
-    {
-        console.log(n3);
-        console.log(n2);
-        console.log(n1);
-    } else {
-        if(n1 < n3) {
-            console.log(n2);
-            console.log(n1);
-            console.log(n3);
-        } else {
-            console.log(n2);
-            console.log(n3);
-            console.log(n1);
-        }
-    }
+if(n1 <= n2 && n2 <= n3) {
+    console.log(n1);
+    console.log(n2);
+    console.log(n3);
+}
+else if(n1 < n2 && n1 < n3) {
+    console.log(n1);
+    console.log(n3);
+    console.log(n2);
+}
+else if(n1 <= n2 && n1 >= n3) {
+    console.log(n3);
+    console.log(n1);
+    console.log(n2);
+}
+else if(n1 > n2  && n2 > n3)  {
+    console.log(n3);
+    console.log(n2);
+    console.log(n1);
+}
+else if(n1 > n2  && n1 < n3) {
+    console.log(n2);
+    console.log(n1);
+    console.log(n3);
+}
+else {
+    console.log(n2);
+    console.log(n3);
+    console.log(n1);
 }
 
 //2. Все параматры получаем с клавиатуры!!!!
