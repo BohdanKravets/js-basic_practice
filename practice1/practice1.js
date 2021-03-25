@@ -10,12 +10,17 @@ console.log(typeof flag);
 console.log(typeof txt);
 //2. Оголосіть змінні a1, a2, a3, a4, a5. За домогою 3х математичних оператцій отримайте числа:
 //    34, 12, 66, 90, 87. Старайтесь використовувати різні оператори. Example: 88 = (16 / 2) * 11
-let a1
-let a2
-let a3
-let a4
-let a5
+let a1 = 1;
+let a2 = 2;
+let a3 = 8;
+let a4 = 11;
+let a5 = 46;
 
+console.log(a5/a2+a4);
+console.log(a4+a2-a1);
+console.log((a3-a2)*a4);
+console.log(a3*a4+a2);
+console.log(a3*a4-a1);
 //3.  Створіть змінні a6, a7, a8, a9, a10. Запишіть в них результати виразів:
 //    5 % 3, 3 % 5, 5 + '3', '5' - 3, 75 + 'кг'
 let a6 = 5 % 3;
